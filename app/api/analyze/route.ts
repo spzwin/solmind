@@ -6,13 +6,6 @@ export const dynamic = "force-dynamic";
 
 export async function POST() {
   try {
-    if (!process.env.OPENAI_API_KEY) {
-      return NextResponse.json(
-        { error: "OPENAI_API_KEY is not configured" },
-        { status: 500 }
-      );
-    }
-
     const data = await getOnchainData();
     const report = await analyzeOnchainData(data);
     return NextResponse.json(report);

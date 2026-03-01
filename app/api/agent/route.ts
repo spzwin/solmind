@@ -17,13 +17,6 @@ export async function GET() {
 // POST: trigger a new agent analysis cycle
 export async function POST() {
   try {
-    if (!process.env.OPENAI_API_KEY) {
-      return NextResponse.json(
-        { error: "OPENAI_API_KEY is not configured" },
-        { status: 500 }
-      );
-    }
-
     const report = await runAgentCycle();
     const status = getAgentStatus();
     return NextResponse.json({ status, report });
