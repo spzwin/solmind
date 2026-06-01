@@ -1,5 +1,12 @@
 # SolMind - AI-Powered Solana Investment Agent
 
+[![Solana](https://img.shields.io/badge/Solana-000?logo=solana&logoColor=14f195)](https://solana.com)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?logo=openai)](https://openai.com)
+[![Next.js](https://img.shields.io/badge/Next.js-14-000?logo=next.js)](https://nextjs.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+> **Live Demo:** [https://tokenton26-solmind.vercel.app](https://tokenton26-solmind.vercel.app)
+
 SolMind is an autonomous AI agent that analyzes real-time Solana blockchain data and generates actionable investment insights. Built for the TokenTon26 Hackathon (AI Track).
 
 ## What It Does
@@ -119,6 +126,22 @@ vercel           # Deploy
 
 Set environment variables in Vercel dashboard before deploying.
 
+## Roadmap
+
+- [ ] Add multi-wallet support for token-gating
+- [ ] Historical chart integration (TradingView or CoinGecko)
+- [ ] Telegram / Discord bot interface for the agent
+- [ ] Persistent storage (Upstash Redis) instead of in-memory report buffer
+- [ ] Support more SPL tokens beyond the initial mint
+
+## Contributing
+
+Contributions are welcome. Please:
+
+1. Fork and create a feature branch
+2. Run `npm run lint` and `npm run build` before opening a PR
+3. Keep TypeScript strict — no `any` without justification
+
 ## License
 
-MIT
+MIT — see [LICENSE](./LICENSE) for details.
